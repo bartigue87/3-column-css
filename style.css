@@ -51,3 +51,42 @@ h1 {
 .luxury .btn {
   color: hsl(179, 100%, 13%);
 }
+
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+  .cars {
+    position: relative;
+  }
+
+  .sedan {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .suv {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .btn {
+    position: absolute;
+    bottom: 50px;
+  }
+  p {
+    grid-row: 3/4;
+  }
+}
